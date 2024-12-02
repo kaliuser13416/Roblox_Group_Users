@@ -3,7 +3,6 @@ import json
 
 groupId = int(input("groupId: " ));
 next_page_cursor = ""
-previousPageCursor = None
 
 while next_page_cursor is not None:
     URL = f"https://groups.roblox.com/v1/groups/{groupId}/users?sortOrder=Asc&limit=100&Cursor={next_page_cursor}"
